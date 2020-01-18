@@ -1,0 +1,9 @@
+export const GRAY1 = '#F7F7F7';
+export const GRAY2 = 'rgb(101, 101, 101)';
+export const GRAY3 = 'rgb(219, 219, 219)';
+export const GRAY4 = 'rgb(191, 191, 191)';
+export const GRAY5 = 'rgb(151, 151, 151)';
+export const GRAY6 = 'rgb(226, 226, 226)';
+export const WHITE = '#FFFFFF';
+export const BLACK = 'rgb(10, 10, 10)';
+export const ORANGE = 'rgb(255, 97, 62)';
