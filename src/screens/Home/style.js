@@ -27,7 +27,7 @@ export const User = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 14px; 16px;
+  padding: 14px 16px;
 `;
 
 export const Profile = styled.View`
@@ -90,6 +90,13 @@ export const Section = styled.View`
   padding-top: 20px;
   background-color: ${WHITE};
   flex-direction: column;
+  border-top-left-radius: 16;
+  border-top-right-radius: 16;
+  shadow-color: ${GRAY1};
+  shadow-offset: 0px 0px;
+  shadow-opacity: 0.05;
+  shadow-radius: 1px;
+  elevation: 1;
 `;
 
 export const SectionTitle = styled.Text`

@@ -11,15 +11,18 @@ import {StatusBar, StyleSheet, View, SafeAreaView} from 'react-native';
 import {observer} from 'mobx-react';
 import {useStores} from 'stores';
 import Navigator from 'navigation';
-import {GRAY1} from 'assets/colors';
+import {GRAY1, WHITE} from 'assets/colors';
 
 const App = () => {
   return (
     <View style={style.Root}>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={style.SafeArea} />
+      <SafeAreaView style={style.SafeAreaTop} />
       <View style={style.Wrapper}>
-        <Navigator onNavigationStateChange={() => {}} uriPrefix="/app" />
+        <Navigator
+          onNavigationStateChange={() => {}}
+          uriPrefix="/unibat"
+        />
       </View>
     </View>
   );
@@ -34,5 +37,9 @@ const style = StyleSheet.create({
   },
   Wrapper: {
     flex: 1,
+  },
+  SafeAreaTop: {
+    width: '100%',
+    backgroundColor: GRAY1,
   },
 });
