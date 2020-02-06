@@ -1,5 +1,6 @@
 import Back from './back.png';
 import CertificateExample from './certificate-example.png';
+import Close from './close.png';
 import Glove from './glove.png';
 import Share from './share.png';
 import TabHome from './tab-home.png';
@@ -15,6 +16,7 @@ import Warning from './warning.png';
 export {
   Back,
   CertificateExample,
+  Close,
   Glove,
   Share,
   TabHome,

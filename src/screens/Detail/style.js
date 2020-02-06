@@ -7,6 +7,7 @@ export const Wrapper = styled.View`
   align-items: flex-start;
   width: 100%;
   flex: 1;
+  position: relative;
 `;
 
 export const Nav = styled.View`
@@ -383,4 +384,19 @@ export const WarningDescription = styled.Text`
   letter-spacing: -0.39px;
   text-align: left;
   color: #757575;
+`;
+
+export const Background = styled.View`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+`;
+
+export const BackgroundContainer = styled.View`
+  position: relative;
+  width: 100%;
+  flex: 1;
+  display: ${props => (props.active ? 'flex' : 'none')};
+  background-color: ${BLACK};
+  opacity: 0.3;
 `;

@@ -1,11 +1,16 @@
 import React from 'react';
 import {SafeAreaView} from 'react-native';
 import * as images from 'assets';
+import {ParticipantList} from 'components';
 import * as style from './style';
 
 const Container = ({
   goBack,
   tags = [],
+  showParticipant,
+  setSheet,
+  showSheet,
+  participantList,
 }) => (
   <style.Wrapper>
     <SafeAreaView />
@@ -54,7 +59,7 @@ const Container = ({
               </style.OrganizerInfo>
             </style.Organizer>
 
-            <style.OtherParticipants>
+            <style.OtherParticipants onPress={() => showParticipant()}>
               <style.OtherParticipantsIcon source={images.Glove} />
               <style.OtherParticipantsText>3명</style.OtherParticipantsText>
             </style.OtherParticipants>
@@ -77,8 +82,8 @@ const Container = ({
             <style.CertificateTitle>하루 <style.CertificateTitleBold>3번</style.CertificateTitleBold></style.CertificateTitle>
 
             <style.CertificateTimeList>
-              {[...Array(3).keys()].map(_ => (
-                <style.CertificateTime>
+              {[...Array(3).keys()].map((_, index) => (
+                <style.CertificateTime key={index}>
                   <style.CertificateIcon source={images.TimeCheck} />
                   <style.CertificateTimeText>{`오전 7:00 ~ 7:30`}</style.CertificateTimeText>
                 </style.CertificateTime>
@@ -104,8 +109,7 @@ const Container = ({
         </style.WarningTitle>
 
         <style.WarningDescription>
-          - 무관한 이미지로 인증 대체 시 경고가 주어집니다.{`\n`}
-          - 경고 2번 누적 시 전액 회수 및 3개월간 서비스 사용이 불가합니다.
+          - 무관한 이미지로 인증 대체 시 경고가 주어집니다.{`\n`}- 경고 2번 누적 시 전액 회수 및 3개월간 서비스 사용이 불가합니다.
         </style.WarningDescription>
       </style.CertificateSection>
 
@@ -113,6 +117,14 @@ const Container = ({
         <style.ButtonText>참가하기</style.ButtonText>
       </style.Button>
     </style.Content>
+
+    <style.Background pointerEvents="none">
+      <style.BackgroundContainer active={showSheet} />
+    </style.Background>
+    <ParticipantList
+      sheetRef={participantList}
+      setBackground={setSheet}
+    />
   </style.Wrapper>
 );
 
