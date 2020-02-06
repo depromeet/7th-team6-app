@@ -11,9 +11,12 @@ const stackNavigator = createStackNavigator(
     Detail: {
       screen: screens.Detail,
     },
+    Write: {
+      screen: screens.Write,
+    },
   },
   {
-    initialRouteName: 'Detail',
+    initialRouteName: 'Write',
     headerMode: 'none',
   },
 );

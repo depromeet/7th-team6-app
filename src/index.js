@@ -7,11 +7,10 @@
  */
 
 import React from 'react';
-import {StatusBar, StyleSheet, View, SafeAreaView} from 'react-native';
+import {StatusBar, StyleSheet, View} from 'react-native';
 import {observer} from 'mobx-react';
 import {useStores} from 'stores';
 import Navigator from 'navigation';
-import {GRAY1, WHITE} from 'assets/colors';
 
 const App = () => {
   return (
@@ -28,16 +27,11 @@ export default App;
 
 const style = StyleSheet.create({
   Root: {
-    backgroundColor: GRAY1,
     flex: 1,
     height: '100%',
     flexDirection: 'column',
   },
   Wrapper: {
     flex: 1,
-  },
-  SafeAreaTop: {
-    width: '100%',
-    backgroundColor: GRAY1,
   },
 });

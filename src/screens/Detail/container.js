@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView} from 'react-native';
-import * as images from 'assets';
 import {ParticipantList} from 'components';
+import * as images from 'assets';
 import * as style from './style';
 
 const Container = ({
@@ -26,7 +26,7 @@ const Container = ({
     <style.Header>
       <style.Tag>
         {tags.map((t, i) => (
-          <style.TagItem>
+          <style.TagItem key={i}>
             <style.TagItemText>{`#${t}`}</style.TagItemText>
           </style.TagItem>
         ))}

@@ -2,14 +2,13 @@ import styled from 'styled-components';
 import {WHITE, BLACK, GRAY5, GRAY6, ORANGE} from 'assets/colors';
 
 export const Wrapper = styled.TouchableOpacity`
-  flex: 1;
   height: 108px;
   shadow-color: #000;
   shadow-offset: 0px 0px;
   shadow-opacity: 0.2;
   shadow-radius: 3px;
   elevation: 10;
-  background-color: white;
+  background-color: ${WHITE};
   margin-bottom: 12px;
   border-radius: 6px;
   flex-direction: row;
