@@ -17,12 +17,8 @@ const App = () => {
   return (
     <View style={style.Root}>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={style.SafeAreaTop} />
       <View style={style.Wrapper}>
-        <Navigator
-          onNavigationStateChange={() => {}}
-          uriPrefix="/unibat"
-        />
+        <Navigator onNavigationStateChange={() => {}} uriPrefix="/unibat" />
       </View>
     </View>
   );
@@ -34,6 +30,8 @@ const style = StyleSheet.create({
   Root: {
     backgroundColor: GRAY1,
     flex: 1,
+    height: '100%',
+    flexDirection: 'column',
   },
   Wrapper: {
     flex: 1,

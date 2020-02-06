@@ -13,13 +13,8 @@ const stackNavigator = createStackNavigator(
     },
   },
   {
-    initialRouteName: 'Main',
-    defaultNavigationOptions: () => ({
-      headerShown: false,
-      headerStyle: {
-        borderBottomWidth: 0,
-      },
-    }),
+    initialRouteName: 'Detail',
+    headerMode: 'none',
   },
 );
 
