@@ -3,55 +3,55 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "iconTemplate512Pt.png",
+      "filename" : "appicon-20-pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "iconTemplate512Pt-1.png",
+      "filename" : "appicon-20-pt@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "iconTemplate512Pt@2x-1.png",
+      "filename" : "appicon-29-pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "iconTemplate512Pt@3x-2.png",
+      "filename" : "appicon-29-pt@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "iconTemplate512Pt@2x.png",
+      "filename" : "appicon-40-pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "iconTemplate512Pt@2x-2.png",
+      "filename" : "appicon-40-pt@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "iconTemplate512Pt@3x.png",
+      "filename" : "appicon-60-pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "iconTemplate512Pt@3x-1.png",
+      "filename" : "appicon-60-pt@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "iconTemplate512Pt@2x-3.png",
+      "filename" : "appicon-1024-pt.png",
       "scale" : "1x"
     }
   ],

@@ -6,13 +6,20 @@
  * @flow
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {StatusBar, StyleSheet, View} from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 import {observer} from 'mobx-react';
 import {useStores} from 'stores';
 import Navigator from 'navigation';
 
 const App = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 3000);
+  }, []);
+
   return (
     <View style={style.Root}>
       <StatusBar barStyle="dark-content" />
