@@ -6,23 +6,25 @@
  * @flow
  */
 
-import React from 'react';
-import {StatusBar, StyleSheet, View, SafeAreaView} from 'react-native';
+import React, { useEffect } from 'react';
+import {StatusBar, StyleSheet, View} from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 import {observer} from 'mobx-react';
 import {useStores} from 'stores';
 import Navigator from 'navigation';
-import {GRAY1, WHITE} from 'assets/colors';
 
 const App = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 3000);
+  }, []);
+
   return (
     <View style={style.Root}>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView style={style.SafeAreaTop} />
       <View style={style.Wrapper}>
-        <Navigator
-          onNavigationStateChange={() => {}}
-          uriPrefix="/unibat"
-        />
+        <Navigator onNavigationStateChange={() => {}} uriPrefix="/unibat" />
       </View>
     </View>
   );
@@ -32,14 +34,11 @@ export default App;
 
 const style = StyleSheet.create({
   Root: {
-    backgroundColor: GRAY1,
     flex: 1,
+    height: '100%',
+    flexDirection: 'column',
   },
   Wrapper: {
     flex: 1,
-  },
-  SafeAreaTop: {
-    width: '100%',
-    backgroundColor: GRAY1,
   },
 });

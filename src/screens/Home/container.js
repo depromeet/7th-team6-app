@@ -1,4 +1,5 @@
 import React from 'react';
+import {SafeAreaView} from 'react-native';
 import * as images from 'assets';
 import {BattleItem} from 'components';
 import * as style from './style';
@@ -10,6 +11,7 @@ const Container = ({
   onChangeType,
 }) => (
   <style.Wrapper>
+    <SafeAreaView />
     <style.Header>
       <style.Title>
         오늘도{'\n'}

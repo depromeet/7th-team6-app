@@ -11,15 +11,13 @@ const stackNavigator = createStackNavigator(
     Detail: {
       screen: screens.Detail,
     },
+    Write: {
+      screen: screens.Write,
+    },
   },
   {
-    initialRouteName: 'Main',
-    defaultNavigationOptions: () => ({
-      headerShown: false,
-      headerStyle: {
-        borderBottomWidth: 0,
-      },
-    }),
+    initialRouteName: 'Write',
+    headerMode: 'none',
   },
 );
 
